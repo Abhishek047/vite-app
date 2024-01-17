@@ -1,7 +1,8 @@
 import { useState } from 'react';
 
 function App() {
-  return <>My appp</>;
+  const myApp = 'my-app';
+  return myApp;
 }
 
 export default App;
