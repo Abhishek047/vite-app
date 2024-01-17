@@ -6,6 +6,8 @@ import './App.css';
 function App() {
   const [count, setCount] = useState(0);
   const myString = 'AMysd-dasdasd';
+  const newString = 'AMysd-dasdasd';
+
   return (
     <>
       <div>
