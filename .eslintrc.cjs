@@ -35,5 +35,6 @@ module.exports = {
     // we can add and turn off rules here
     "react/react-in-jsx-scope": "off",
     "react/button-has-type": "off",
+    "@typescript-eslint/no-unused-vars": "off",
   },
 };
