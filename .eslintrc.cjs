@@ -36,5 +36,14 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/button-has-type': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
+    'react/function-component-definition': [
+      2,
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function',
+      },
+    ],
+    'react/jsx-props-no-spreading': 'off',
+    'import/prefer-default-export': 'off',
   },
 };

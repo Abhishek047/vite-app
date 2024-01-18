@@ -1,8 +1,15 @@
-import { useState } from 'react';
+import AppRouter from './router/Routes';
 
-function App() {
+const App = () => {
   const myApp = 'my-app';
-  return myApp;
-}
+  return (
+    <div>
+      <div>
+        other-wrapper-providers for {myApp}
+        <AppRouter />
+      </div>
+    </div>
+  );
+};
 
 export default App;
