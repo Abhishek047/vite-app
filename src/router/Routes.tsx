@@ -18,6 +18,7 @@ const AppRouter = () => {
         if (route.isPrivate) {
           RouteWrapper = PrivateWrapper;
         }
+
         const { Component, ...rest } = route;
         return (
           <Route
