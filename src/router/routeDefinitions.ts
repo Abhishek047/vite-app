@@ -7,11 +7,14 @@ export interface RouteComponents {
   isPublic?: boolean;
   isPrivate?: boolean;
 }
-export interface RouteWrapper extends Partial<RouteComponents> {
+export interface RouteWrapper
+  extends Pick<RouteComponents, 'isPrivate' | 'isPublic'> {
   children: React.ReactNode;
 }
-
-export const HomePath: RouteComponents = {
+const HomePath: RouteComponents = {
   path: '/',
   Component: Home,
+  isPrivate: true,
 };
+
+export const paths = [HomePath];
