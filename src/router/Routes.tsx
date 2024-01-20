@@ -4,16 +4,14 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router-dom';
-import * as routeDefinitions from './routeDefinitions';
+import { paths } from './routeDefinitions';
 import { PublicWrapper } from './PublicWrapper';
 import { PrivateWrapper } from './PrivateWrapper';
-
-const routes = Object.values(routeDefinitions);
 
 const AppRouter = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      routes.map((route) => {
+      paths.map((route) => {
         let RouteWrapper = PublicWrapper;
         if (route.isPrivate) {
           RouteWrapper = PrivateWrapper;

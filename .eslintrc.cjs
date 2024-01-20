@@ -36,6 +36,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/button-has-type': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-explicit-any': 'warn',
     'react/function-component-definition': [
       2,
       {
