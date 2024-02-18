@@ -1,17 +1,17 @@
 import { ThemeProvider } from '@mui/material/styles';
+import { Provider } from 'react-redux';
 import AppRouter from './router/Routes';
 import { theme } from './themes/customTheme';
+import { store } from './store/store';
 
 const App = () => {
-  const myApp = 'my-app';
   return (
     <div>
-      <div>
-        other-wrapper-providers for {myApp}
+      <Provider store={store}>
         <ThemeProvider theme={theme}>
           <AppRouter />
         </ThemeProvider>
-      </div>
+      </Provider>
     </div>
   );
 };
