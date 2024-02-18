@@ -36,9 +36,4 @@ const Error404Path: RouteComponents = {
   Component: Error404,
   isPrivate: true,
 };
-export const paths = [
-  HomePath,
-  AboutPath,
-  ContactPath,
-  Error404Path,
-];
+export const paths = [HomePath, AboutPath, ContactPath, Error404Path];
